@@ -1,0 +1,136 @@
+/* Header - flex-container és hero rész */
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 600px; /* fix magasság helyett minimum */
+  position: relative;
+  background-color: #cecece;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Bal és jobb oldal */
+.section,
+.section2 {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Szöveg tartalom a bal oldalon */
+.hero-text {
+  max-width: 600px;
+  padding: 20px;
+  z-index: 2;
+  text-align: left;
+  color: #3c2f2f;
+ background: url('../../assets/wood.jpg') center/cover no-repeat;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #f9d648;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  color: #3c2f2f;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6c200;
+}
+
+/* Ginko wrapper – mindig az elválasztó vonalon */
+.ginko-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.ginko {
+  width: 25vw;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Mobilnézet */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .section
+ {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 10px 20px 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .ginko-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 20px;
+    pointer-events: none;
+    text-align: center;
+  }
+
+  .ginko {
+    width: 40vw;
+    max-width: 200px;
+  }
+}

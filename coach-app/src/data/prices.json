@@ -1,0 +1,120 @@
+{
+  "Life Coaching": [
+    {
+      "name": "Egyéni coaching",
+      "duration": "60 perc",
+      "price": "20 000 - 30 000 Ft / alkalom",
+      "description": "Egyéni igények alapján"
+    },
+    {
+      "name": "Integrált Life & Táplálkozási Tanácsadás",
+      "duration": "60 perc",
+      "price": "40 000 Ft / alkalom",
+      "description": "Egyéni igények alapján"
+    }
+  ],
+  "Business Coaching": [
+    {
+      "name": "Egyéni coaching",
+      "duration": "60 perc",
+      "price": "30 000 - 50 000 Ft / alkalom",
+      "description": "Egyéni igények alapján"
+    }
+  ],
+  "Csoportos Coaching": [
+    {
+      "name": "Csoportos coaching (max. 5-6 fő)",
+      "duration": "60 perc",
+      "price": "12 000 Ft / fő / alkalomTeljes program: 84 000 Ft/  fő",
+      "description": "6 alkalom csoportos coaching ülés és 1 alkalom egyeni 60 perces coaching ülés"
+    },
+    {
+      "name": "Csoportos coaching + egyéni táplálkozási tanácsadás + egyénre szabott étrend (Az étrend 1-2 napon belüli kiküldése)",
+      "duration": "60 perc",
+      "price": "20 000Ft  / fő / alkalom Teljes program: 160 000 Ft fő",
+      "description": "1 alkalom táplálkozási tanácsadás állapotfelmérés, 6 alkalom csoportos coaching ülés, 1 alkalom egyéni coaching ülés étrend finomhangolásával, egyénre szabott étrend"
+    }
+  ],
+  "Táplálkozási Tanácsadás": [
+    {
+      "name": "Első konzultáció + étrend készítés",
+      "duration": "90 perc",
+      "price": "40 000 Ft",
+      "description": "A heti étrend 1-2 napon belül kiküldve"
+    },
+    {
+      "name": "Második konzultáció + étrend finomhangolás",
+      "duration": "60 perc",
+      "price": "30 000 Ft",
+      "description": "Egyéni igények alapján"
+    },
+    {
+      "name": "Követő konzultáció",
+      "duration": "60 perc",
+      "price": "25 000 Ft",
+      "description": "Egyéni igények alapján"
+    },
+    {
+      "name": "Csomagajánlat (2 konzultáció + étrend)",
+      "duration": "90 + 60 perc",
+      "price": "60 000 Ft",
+      "description": "A heti étrend 1-2 napon belül kiküldve"
+    },
+    {
+      "name": "Havi mentorprogram (étrend + 3 konzultáció)",
+      "duration": "90 + 60 + 60 perc",
+      "price": "75 000 Ft",
+      "description": "A heti étrend 1-2 napon belül kiküldve"
+    },
+    {
+      "name": "Integrált Life & Táplálkozási Tanácsadás",
+      "duration": "60 perc",
+      "price": "40 000 Ft / alkalom",
+      "description": "Egyéni igények alapján"
+    }
+  ],
+  "VIP Előfizetés Modulok - Coaching": [
+    {
+      "name": "Bronz",
+      "price": "5 000 Ft / hó",
+      "description": "Exkluzív blogposztok, táplálkozási és életmód tippek, letölthető tartalmak, útmutatók. Hozzáférés zárt online közösségi térhez."
+    },
+    {
+      "name": "Silver",
+      "price": "15 000 Ft / hó",
+      "description": "Minden Bronz tartalma. Havonta egy 30 perces élő online Q&A / micro coaching session. Heti 15–20 perces exkluzív videós tartalom."
+    },
+    {
+      "name": "Gold",
+      "price": "35 000 Ft / hó",
+      "description": "Minden Silver tartalma. Havonta egy 60 perces egyéni konzultáció."
+    },
+    {
+      "name": "Platinum",
+      "price": "60 000 Ft / hó",
+      "description": "Minden Gold tartalma. Extra heti 30 perces személyes mentorálás, amely az egyéni, specifikus problémákra fókuszál. Prioritásos ügyfélszolgálat, gyorsabb válaszidő. Havonta egy exkluzív élő workshop / személyes konzultáció (60–90 perc), ahol komplex témákat dolgoznak fel."
+    }
+  ],
+  "VIP Előfizetés Modulok - Táplálkozási Tanácsadás": [
+    {
+      "name": "Bronz",
+      "price": "7 000 Ft / hó",
+      "description": "Exkluzív blogposztok, táplálkozási és életmód tippek, letölthető receptek, útmutatók. Hozzáférés zárt online közösségi térhez."
+    },
+    {
+      "name": "Silver",
+      "price": "25 000 Ft / hó",
+      "description": "Minden Bronz tartalma. Havonta egy 45 perces élő online Q&A / micro táplálkozási tanácsadás. Heti 15–20 perces exkluzív videós tartalom."
+    },
+    {
+      "name": "Gold",
+      "price": "40 000 Ft / hó",
+      "description": "Minden Silver tartalma. Személyre szabott heti étrend kidolgozása (1–2 nap alatt). Havonta egy 60 perces egyéni konzultáció."
+    },
+    {
+      "name": "Platinum",
+      "price": "70 000 Ft / hó",
+      "description": "Minden Gold tartalma. Extra heti 30 perces személyes mentorálás, mely a személyes, specifikus problémákra fókuszál. Prioritásos ügyfélszolgálat, gyorsabb válaszidő. Havonta egy exkluzív élő workshop / személyes konzultáció (60–90 perc), ahol komplex családi táplálkozási tanácsadás is elérhető."
+    }
+  ]
+}

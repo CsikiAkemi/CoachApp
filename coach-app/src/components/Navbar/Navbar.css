@@ -1,0 +1,139 @@
+/* ===== Alap navigációs sáv ===== */
+.navbar {
+  width: 100%;
+  color: white;
+  padding: 0px 0;
+  max-height: 200px;
+  position: fixed;  /* FIX pozíció minden nézetben */
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;      /* magasabb z-index, hogy minden fölött legyen */
+  background: transparent;
+  transition: background 0.5s;
+}
+
+.logo {
+  width: 100px;
+}
+
+/* Görgetés után háttérszín */
+.dark-nav {
+  background-color: #e6c200;
+  transition: background 0.5s;
+}
+
+/* Menü desktopon */
+.nav-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #e6c200;
+  color: #070707;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hamburger ikon alapból rejtve */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger img {
+  width: 30px;
+}
+
+/* 1000px alatt kisebb logó és margók */
+@media (max-width: 1000px) {
+  .logo {
+    width: 100px;
+  }
+
+  .nav-links li {
+    margin: 10px 15px;
+  }
+}
+
+/* ===== Mobilnézet (max 840px) ===== */
+@media (max-width: 840px) {
+  .navbar {
+    padding: 15px 0;
+    /* position: fixed már fent van alapból, így itt nem kell átállítani */
+    width: 100%;
+    z-index: 20;
+  }
+
+  /* ✅ Hamburger ikon pozíciója */
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 21;
+  }
+
+  @media (max-width: 768px) {
+   .hamburger {
+    margin-top: 15px;   /* picit lejjebb */
+    margin-right: 20px; /* legyen távolabb a jobb széltől */
+  }
+}
+
+  /* Menü jobbról csúszik be */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e6c200;
+    width: 200px;
+    padding-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 20;
+  }
+
+  /* Menü megjelenítése */
+  .nav-links.show {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 25px 0;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    color: #fff;
+  }
+}
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content.show {
+  display: block;
+}

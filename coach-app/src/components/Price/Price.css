@@ -1,0 +1,179 @@
+/* Price szakasz CSS */
+
+/* Fejléc a dizájnhoz igazítva */
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background: url('../../assets/wood.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-wrap: nowrap; /* ne törjön új sorba */
+  max-height: 140px;
+  box-sizing: border-box;
+}
+
+.price-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price-header h1 {
+  font-size: 1.7rem;
+  color: #4e3e3e;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.price-header h2 {
+  font-size: 1rem;
+  color: #4e3e3e;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 30;
+}
+
+/* Wrapper */
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #9c9c99;
+  color: #3c2f2f;
+}
+
+/* Egy-egy szakasz */
+.price-section {
+  margin: 40px auto;
+  width: 100%;
+  max-width: 1400px;
+  background-color: rgba(206, 206, 206, 0.7);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Gomb stílus */
+.toggle-button {
+  background-color: #f9d648;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  color: #3c2f2f;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #e6c200;
+}
+
+/* Kártyák */
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.price-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.price-card:hover {
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.price-card h3 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  margin-bottom: 12px;
+}
+
+.price-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+
+/* Mobil reszponzív */
+@media (max-width: 768px) {
+  .price-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 15px;
+  }
+
+  .price-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .price-header h2 {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .price-wrapper {
+    padding: 30px 15px;
+  }
+
+  .price-section {
+    padding: 15px;
+    margin: 30px 10px;
+  }
+
+  .toggle-button {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+/* Mobil nézet (max 768px) */
+@media (max-width: 768px) {
+  .price-header {
+    flex-direction: column;       /* egymás alá rendezi a tartalmat */
+    align-items: center;          /* középre igazítás */
+    padding: 20px 20px;           /* kisebb padding mobilon */
+    max-height: none;             /* engedd növekedni magasságot */
+  }
+
+  .price-header-text {
+    width: 100%;
+    text-align: center;           /* középre igazított szöveg */
+    margin-bottom: 15px;          /* kis térköz a gomb és szöveg között */
+  }
+
+  .price-header h1 {
+    font-size: 1.5rem;            /* kisebb betűméret mobilra */
+    line-height: 1.2;
+  }
+
+  .price-header h2 {
+    font-size: 0.9rem;
+  }
+
+  .price-header > button {
+    width: 100%;                  /* gomb szélessége teljes */
+    max-width: 300px;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}

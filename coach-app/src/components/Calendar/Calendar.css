@@ -1,0 +1,34 @@
+.calendar-wrapper {
+  background-color: #cecece; /* világos szürke háttér */
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 600px;
+}
+
+.calendar-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calendar-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 4px solid #f2cc0f; /* aranysárga keret */
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #fff; /* fehér a naptár háttere körül */
+  box-sizing: border-box;
+}
+
+.google-calendar-iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+}

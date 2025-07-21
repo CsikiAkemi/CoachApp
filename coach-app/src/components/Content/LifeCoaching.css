@@ -1,0 +1,210 @@
+/* További szöveges tartalmak - alap beállítások és konténerek */
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #9c9c99;
+  color: #3c2f2f;
+  line-height: 1.7;
+}
+
+/* Fejléc (Title bar) – egységes a többi szekcióval */
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background: url('../../assets/wood.jpg') center/cover no-repeat;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* Szöveges rész */
+.title-text {
+  max-width: 600px;
+  color: #3c2f2f;
+}
+
+.title-text h1 {
+   font-size: 1.7rem;
+  color: #4e3e3e;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.title-text h2 {
+ font-size: 1rem;
+  color: #4e3e3e;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 30;
+}
+
+/* Tartalom konténer */
+.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+/* Oszlopok */
+.content-columns,
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.two-columns {
+  justify-content: center;
+}
+
+.column {
+  flex: 1 1 45%;
+  min-width: 280px;
+}
+
+.column p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #3c2f2f;
+}
+
+.column h3 {
+  font-size: 1.1rem;
+  margin: 20px 0 10px;
+  color: #1c1c1c;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1c1c1c;
+  margin: 30px 0 20px;
+}
+
+/* Gombok */
+.cta-button,
+.cta-secondary,
+.read-more-button,
+.less-button {
+  background-color: #f9d648;
+  border: none;
+  border-radius: 30px;
+  color: #3c2f2f;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-size: 1rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.cta-secondary:hover,
+.read-more-button:hover,
+.less-button:hover {
+  background-color: #e6c200;
+  color: black;
+}
+
+.cta-secondary {
+  display: block;
+  margin: 30px auto;
+  padding: 14px 28px;
+}
+
+/* Tovább olvasok / Kevesebb */
+.button-wrapper,
+.tovabbi-szoveg-wrapper {
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.read-more-button,
+.less-button {
+  margin: 20px auto 40px;
+  display: inline-block;
+  padding: 10px 24px;
+}
+
+/* Elválasztó vonal */
+.elvalaszto {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin: 40px 0;
+}
+
+/* Ginko levelek */
+.ginko-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+
+.ginko-left,
+.ginko-right {
+  width: 80px;
+  height: auto;
+}
+
+.ginko-right {
+  transform: scaleX(-1);
+}
+
+.ginko-image {
+  width: 120px;
+  margin-top: 20px;
+  display: block;
+}
+
+/* Záró szöveg */
+.closing-text {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 40px auto 20px;
+  max-width: 800px;
+  color: #3c2f2f;
+}
+
+/* Mobil / tablet reszponzivitás */
+@media (max-width: 768px) {
+  .title-bar {
+    padding: 40px 20px;
+  }
+
+  .title-text {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 20px 15px;
+    margin: 40px 10px;
+  }
+
+  .content-columns,
+  .two-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+
+  .ginko-wrapper {
+    gap: 40px;
+  }
+}
